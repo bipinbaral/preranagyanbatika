@@ -1,0 +1,12 @@
+export { default as Hero } from "./Hero";
+export { default as About } from "./About";
+export { default as Statistics } from "./Statistics";
+export { default as Programs } from "./Programs";
+export { default as WhyChooseUs } from "./WhyChooseUs";
+export { default as Facilities } from "./Facilities";
+export { default as Gallery } from "./Gallery";
+export { default as Events } from "./Events";
+export { default as Testimonials } from "./Testimonials";
+export { default as AdmissionProcess } from "./AdmissionProcess";
+export { default as FAQ } from "./FAQ";
+export { default as CTA } from "./CTA";
