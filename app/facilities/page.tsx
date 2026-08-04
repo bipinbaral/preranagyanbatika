@@ -30,56 +30,56 @@ const facilities = [
     title: "Montessori Classrooms",
     description:
       "Bright, spacious classrooms equipped with authentic Montessori materials, child-sized furniture, and organized learning areas that promote independence and focus.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+    image: "/images/facilities/montessoriclassroom.jpg",
   },
   {
     icon: BookOpen,
     title: "Library & Reading Corner",
     description:
       "A cozy reading space stocked with picture books, storybooks, and educational resources to cultivate a lifelong love of reading from an early age.",
-    image: "https://images.unsplash.com/photo-1497633762305-f8ce55317943?w=800&q=80",
+    image: "/images/facilities/library.jpg",
   },
   {
     icon: Palette,
     title: "Art & Activity Room",
     description:
       "Dedicated creative spaces for painting, drawing, craft work, music sessions, and hands-on projects that nurture artistic expression.",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&q=80",
+    image: "/images/facilities/artandactivityroom.jpg",
   },
   {
     icon: Trees,
     title: "Outdoor Playground",
     description:
       "A safe, well-maintained outdoor area with play equipment for physical activities, sports, and nature-based learning experiences.",
-    image: "https://images.unsplash.com/photo-1564760059215-87602a16e3a8?w=800&q=80",
+    image: "/images/facilities/outerplayground.png",
   },
   {
     icon: Utensils,
     title: "Hygienic Cafeteria",
     description:
       "Clean dining facilities where children learn healthy eating habits in a supervised, comfortable environment.",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+    image: "/images/facilities/canteen.webp",
   },
   {
     icon: Monitor,
     title: "Computer Learning Lab",
     description:
       "Age-appropriate technology resources that introduce digital literacy skills in a guided, balanced manner.",
-    image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+    image: "/images/facilities/computerlab.webp",
   },
   {
     icon: Shield,
     title: "Security & Safety",
     description:
       "CCTV monitoring, secure entry points, and trained staff ensure a safe environment for all students throughout the school day.",
-    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+    image: "/images/facilities/security.png",
   },
   {
     icon: HeartPulse,
     title: "First Aid & Health",
     description:
       "On-campus first aid facilities and health awareness programs to support student wellbeing and safety.",
-    image: "https://images.unsplash.com/photo-1577896851231-94ef0908cc59?w=800&q=80",
+    image: "/images/facilities/firstaid.png",
   },
 ];
 

@@ -1,34 +1,34 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Users, BookOpen, Award, Heart } from "lucide-react";
+import { GraduationCap, Library, Star, Puzzle } from "lucide-react";
 import { SCHOOL } from "@/lib/constants";
 import Container from "@/components/ui/Container";
 
 const stats = [
   {
-    icon: Users,
+    icon: GraduationCap,
     value: SCHOOL.students,
     label: "Enrolled Students",
-    color: "bg-primary/10 text-primary",
+    color: "bg-white/10 text-white",
   },
   {
-    icon: BookOpen,
+    icon: Library,
     value: "7",
     label: "Academic Programs",
-    color: "bg-gold/15 text-dark-green",
+    color: "bg-gold/20 text-gold",
   },
   {
-    icon: Award,
+    icon: Star,
     value: SCHOOL.established,
     label: "Years of Excellence",
-    color: "bg-light-green/20 text-primary",
+    color: "bg-white/10 text-white",
   },
   {
-    icon: Heart,
+    icon: Puzzle,
     value: "100%",
     label: "Montessori Focused",
-    color: "bg-primary/10 text-primary",
+    color: "bg-gold/20 text-gold",
   },
 ];
 

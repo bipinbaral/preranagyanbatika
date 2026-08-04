@@ -31,7 +31,7 @@ export default function About() {
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&q=80"
+                src="/images/gallery/about us.jpg"
                 alt="Montessori classroom at Prerana Gyan Batika"
                 fill
                 className="object-cover"

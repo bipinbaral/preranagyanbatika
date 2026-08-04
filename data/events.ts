@@ -15,7 +15,7 @@ export const events: SchoolEvent[] = [
     description:
       "Students showcase their Montessori projects, creative work, and learning journeys to parents and the community.",
     image:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7714fda?w=800&q=80",
+      "/images/gallery/annualcelebration.jpg",
     location: "School Campus",
   },
   {
@@ -25,7 +25,7 @@ export const events: SchoolEvent[] = [
     description:
       "An interactive session for parents to understand our Montessori philosophy, curriculum, and child development approach.",
     image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+      "/images/gallery/parentorentation.jpg",
     location: "Main Hall",
   },
   {
@@ -35,7 +35,7 @@ export const events: SchoolEvent[] = [
     description:
       "A week of fun physical activities, team games, and health awareness programs designed for every age group.",
     image:
-      "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80",
+      "/images/gallery/sportsweek.jpg",
     location: "Playground",
   },
   {
@@ -45,7 +45,7 @@ export const events: SchoolEvent[] = [
     description:
       "Celebrating Nepal's rich culture through dance, music, traditional dress, and storytelling by our young learners.",
     image:
-      "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80",
+      "/images/gallery/culturalheritage.jpg",
     location: "School Campus",
   },
 ];

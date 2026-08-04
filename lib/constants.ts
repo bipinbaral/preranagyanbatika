@@ -8,7 +8,7 @@ export const SCHOOL = {
   programs: ["ECD", "Nursery", "LKG", "UKG", "Grade 1", "Grade 2", "Grade 3"],
   boarding: "Day Scholars",
   coed: true,
-  students: "73+",
+  students: "150+",
   phone: "01-5218530",
   email: "preranaschool72514@gmail.com",
   mission:

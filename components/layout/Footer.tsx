@@ -113,13 +113,18 @@ export default function Footer() {
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
+        <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row text-center sm:text-left">
           <p className="text-sm text-white/50">
             © {currentYear} {SCHOOL.name}. All rights reserved.
           </p>
-          <p className="text-sm text-white/50">
-            Co-ed · Day Scholars · {SCHOOL.students} Students
-          </p>
+          <div className="flex flex-col items-center sm:items-end gap-1">
+            <p className="text-sm text-white/50">
+              Co-ed · Day Scholars · {SCHOOL.students} Students
+            </p>
+            <p className="text-sm text-white/50">
+              Designed and developed by <a href="https://baralbipin.com.np" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Bipin Creates</a>
+            </p>
+          </div>
         </Container>
       </div>
     </footer>

@@ -21,7 +21,7 @@ export const programs: Program[] = [
       "Child-safe Montessori materials",
     ],
     image:
-      "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80",
+      "/images/facilities/montessoriclassroom.jpg",
   },
   {
     id: "nursery",
@@ -36,7 +36,7 @@ export const programs: Program[] = [
       "Daily routines and self-care skills",
     ],
     image:
-      "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=800&q=80",
+      "/images/programs/nursary.jpg",
   },
   {
     id: "lkg",
@@ -51,7 +51,7 @@ export const programs: Program[] = [
       "Group projects and presentations",
     ],
     image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80",
+      "/images/programs/lkg.jpg",
   },
   {
     id: "ukg",
@@ -66,7 +66,7 @@ export const programs: Program[] = [
       "School readiness and leadership activities",
     ],
     image:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7714fda?w=800&q=80",
+      "/images/programs/ukg.jpg",
   },
   {
     id: "grade-1-3",
@@ -81,6 +81,6 @@ export const programs: Program[] = [
       "Values education and community service",
     ],
     image:
-      "https://images.unsplash.com/photo-1497633762305-f8ce55317943?w=800&q=80",
+      "/images/programs/1-3.jpg",
   },
 ];

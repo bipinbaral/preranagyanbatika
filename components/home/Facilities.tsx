@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Building2, BookOpen, Palette, Trees, Utensils } from "lucide-react";
+import { ArrowRight, Building2, BookOpen, Palette, Trees, Utensils, HeartPulse, ShieldCheck, Monitor } from "lucide-react";
 import Container from "@/components/ui/Container";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
@@ -13,31 +13,49 @@ const facilities = [
     icon: Building2,
     title: "Modern Classrooms",
     description: "Spacious, well-ventilated Montessori classrooms with natural lighting.",
-    image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80",
+    image: "/images/facilities/montessoriclassroom.jpg",
   },
   {
     icon: BookOpen,
     title: "Library & Reading Corner",
     description: "A curated collection of age-appropriate books to spark imagination.",
-    image: "https://images.unsplash.com/photo-1497633762305-f8ce55317943?w=600&q=80",
+    image: "/images/facilities/library.jpg",
   },
   {
     icon: Palette,
     title: "Art & Activity Room",
     description: "Creative spaces for painting, crafts, music, and hands-on projects.",
-    image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80",
+    image: "/images/facilities/artandactivityroom.jpg",
   },
   {
     icon: Trees,
     title: "Outdoor Playground",
     description: "Safe outdoor area for physical play, sports, and nature exploration.",
-    image: "https://images.unsplash.com/photo-1564760059215-87602a16e3a8?w=600&q=80",
+    image: "/images/facilities/outerplayground.png",
   },
   {
     icon: Utensils,
     title: "Hygienic Cafeteria",
     description: "Clean dining area promoting healthy eating habits among students.",
-    image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&q=80",
+    image: "/images/facilities/canteen.webp",
+  },
+  {
+    icon: HeartPulse,
+    title: "First Aid & Medical Room",
+    description: "Equipped medical facility with trained staff for prompt first aid.",
+    image: "/images/facilities/firstaid.png",
+  },
+  {
+    icon: ShieldCheck,
+    title: "24/7 Security",
+    description: "Secure campus with CCTV surveillance and trained security personnel.",
+    image: "/images/facilities/security.png",
+  },
+  {
+    icon: Monitor,
+    title: "Computer Learning Lab",
+    description: "Modern computer lab for early digital literacy and tech skills.",
+    image: "/images/facilities/computerlab.webp",
   },
 ];
 
