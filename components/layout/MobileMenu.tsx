@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { NAV_LINKS } from "@/lib/constants";
+import { NAV_LINKS, SCHOOL } from "@/lib/constants";
 import Button from "@/components/ui/Button";
 
 interface MobileMenuProps {
