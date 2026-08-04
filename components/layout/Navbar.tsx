@@ -66,7 +66,7 @@ export default function Navbar() {
               className="h-12 w-12 object-contain"
               priority
             />
-            <div className="hidden sm:block">
+            <div>
               <p className="text-sm font-bold leading-tight text-dark-green">
                 Prerana Gyan Batika
               </p>
