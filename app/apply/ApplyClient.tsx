@@ -1,56 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { Send, FileText } from "lucide-react";
 import { SCHOOL } from "@/lib/constants";
 import Container from "@/components/ui/Container";
 import PageHeader from "@/components/ui/PageHeader";
 import Card from "@/components/ui/Card";
-import Button from "@/components/ui/Button";
 
 export default function ApplyClient() {
-  const [formState, setFormState] = useState({
-    childName: "",
-    childDob: "",
-    childGender: "",
-    program: "",
-    parentName: "",
-    parentPhone: "",
-    parentEmail: "",
-    address: "",
-    notes: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    const subject = `Admission Application: ${formState.childName}`;
-    const body = `
-Admission Application Details:
-
---- Child's Information ---
-Name: ${formState.childName}
-Date of Birth: ${formState.childDob}
-Gender: ${formState.childGender}
-Program Applying For: ${formState.program}
-
---- Parent/Guardian Information ---
-Name: ${formState.parentName}
-Phone: ${formState.parentPhone}
-Email: ${formState.parentEmail}
-Address: ${formState.address}
-
---- Additional Notes ---
-${formState.notes || "None provided"}
-    `.trim();
-
-    const mailtoLink = `mailto:${SCHOOL.email}?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoLink;
-  };
-
   return (
     <>
       <PageHeader
@@ -75,7 +31,11 @@ ${formState.notes || "None provided"}
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit} className="space-y-8">
+              <form action={`https://formsubmit.co/${SCHOOL.email}`} method="POST" className="space-y-8">
+                {/* FormSubmit Configuration */}
+                <input type="hidden" name="_subject" value="New Admission Application!" />
+                <input type="hidden" name="_template" value="table" />
+
                 {/* Child Information */}
                 <div>
                   <h3 className="mb-4 flex items-center text-lg font-bold text-dark-green">
@@ -87,10 +47,9 @@ ${formState.notes || "None provided"}
                       <label htmlFor="childName" className="mb-1.5 block text-sm font-medium text-text/80">Full Name *</label>
                       <input
                         id="childName"
+                        name="Child's Name"
                         type="text"
                         required
-                        value={formState.childName}
-                        onChange={(e) => setFormState({ ...formState, childName: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -98,10 +57,9 @@ ${formState.notes || "None provided"}
                       <label htmlFor="childDob" className="mb-1.5 block text-sm font-medium text-text/80">Date of Birth *</label>
                       <input
                         id="childDob"
+                        name="Date of Birth"
                         type="date"
                         required
-                        value={formState.childDob}
-                        onChange={(e) => setFormState({ ...formState, childDob: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -109,9 +67,8 @@ ${formState.notes || "None provided"}
                       <label htmlFor="childGender" className="mb-1.5 block text-sm font-medium text-text/80">Gender *</label>
                       <select
                         id="childGender"
+                        name="Gender"
                         required
-                        value={formState.childGender}
-                        onChange={(e) => setFormState({ ...formState, childGender: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       >
                         <option value="">Select Gender</option>
@@ -124,9 +81,8 @@ ${formState.notes || "None provided"}
                       <label htmlFor="program" className="mb-1.5 block text-sm font-medium text-text/80">Program Applying For *</label>
                       <select
                         id="program"
+                        name="Program"
                         required
-                        value={formState.program}
-                        onChange={(e) => setFormState({ ...formState, program: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       >
                         <option value="">Select Program</option>
@@ -149,10 +105,9 @@ ${formState.notes || "None provided"}
                       <label htmlFor="parentName" className="mb-1.5 block text-sm font-medium text-text/80">Full Name *</label>
                       <input
                         id="parentName"
+                        name="Parent's Name"
                         type="text"
                         required
-                        value={formState.parentName}
-                        onChange={(e) => setFormState({ ...formState, parentName: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -160,10 +115,9 @@ ${formState.notes || "None provided"}
                       <label htmlFor="parentPhone" className="mb-1.5 block text-sm font-medium text-text/80">Phone Number *</label>
                       <input
                         id="parentPhone"
+                        name="Phone Number"
                         type="tel"
                         required
-                        value={formState.parentPhone}
-                        onChange={(e) => setFormState({ ...formState, parentPhone: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -171,9 +125,8 @@ ${formState.notes || "None provided"}
                       <label htmlFor="parentEmail" className="mb-1.5 block text-sm font-medium text-text/80">Email Address</label>
                       <input
                         id="parentEmail"
+                        name="Email Address"
                         type="email"
-                        value={formState.parentEmail}
-                        onChange={(e) => setFormState({ ...formState, parentEmail: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -181,10 +134,9 @@ ${formState.notes || "None provided"}
                       <label htmlFor="address" className="mb-1.5 block text-sm font-medium text-text/80">Residential Address *</label>
                       <input
                         id="address"
+                        name="Address"
                         type="text"
                         required
-                        value={formState.address}
-                        onChange={(e) => setFormState({ ...formState, address: e.target.value })}
                         className="w-full rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                       />
                     </div>
@@ -201,21 +153,23 @@ ${formState.notes || "None provided"}
                     <label htmlFor="notes" className="mb-1.5 block text-sm font-medium text-text/80">Any special needs, medical conditions, or notes?</label>
                     <textarea
                       id="notes"
+                      name="Notes"
                       rows={4}
-                      value={formState.notes}
-                      onChange={(e) => setFormState({ ...formState, notes: e.target.value })}
                       className="w-full resize-none rounded-xl border border-black/10 bg-cream px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
                 </div>
 
                 <div className="pt-4 border-t border-black/10 text-center">
-                  <Button type="submit" size="lg" className="w-full sm:w-auto min-w-[200px]">
+                  <button 
+                    type="submit" 
+                    className="inline-flex items-center justify-center gap-2 rounded-full font-medium transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 px-8 py-3.5 text-base sm:w-auto min-w-[200px] bg-primary text-white hover:bg-primary/90 focus:ring-primary/20 w-full"
+                  >
                     <Send className="h-5 w-5" />
                     Submit Application
-                  </Button>
+                  </button>
                   <p className="mt-4 text-xs text-text/50">
-                    Clicking submit will open your default email application with your application details ready to send.
+                    Your application will be sent directly to our school email via a secure form service.
                   </p>
                 </div>
               </form>
