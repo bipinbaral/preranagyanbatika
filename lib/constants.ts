@@ -12,7 +12,7 @@ export const SCHOOL = {
   phone: "01-5218530",
   email: "preranaschool72514@gmail.com",
   facebook: "https://www.facebook.com/profile.php?id=61565824730923",
-  mapLink: "https://www.google.com/maps?rlz=1C1KNTJ_enNP1070NP1070&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRg8MgYIAxBFGDwyBggEEEUYPDIGCAUQRRg9MgYIBhBFGEEyBggHEEUYPdIBCDEwMTJqMGo0qAIAsAIB&um=1&ie=UTF-8&fb=1&gl=np&sa=X&geocode=KaveA_7wI-s5MdOvFXSnXWiM&daddr=Kathmandu-14,+Kathmandu+44600",
+  mapLink: "https://www.google.com/maps?rlz=1C1KNTJ_enNP1070NP1070&gs_lcrp=EgZjaHJvbWUqCAgBEEUYJxg7MgYIABBFGDwyCAgBEEUYJxg7MgYIAhBFGDwyBggDEEUYPDIGCAQQRRg8MgYIBRBFGEEyBggGEEUYPTIGCAcQRRhB0gEINDk0NWowajeoAgCwAgA&um=1&ie=UTF-8&fb=1&gl=np&sa=X&geocode=KaveA_7wI-s5MdOvFXSnXWiM&daddr=Kathmandu-14,+Kathmandu+44600",
   admissionFormLink: "/apply",
   mission:
     "To nurture every child's intellectual, emotional, social, and creative potential through quality Montessori education.",

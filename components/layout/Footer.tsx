@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="mb-4 flex items-center gap-3">
               <Image
-                src="/images/logo/footerlogo.png"
+                src="/images/logo/logo.png"
                 alt={SCHOOL.name}
                 width={56}
                 height={56}
@@ -66,7 +66,9 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/70">
               <li className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
-                {SCHOOL.location}
+                <a href={SCHOOL.mapLink} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+                  {SCHOOL.location}
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-gold" />
@@ -108,33 +110,18 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
-            <div className="mt-6 overflow-hidden rounded-xl border border-white/10 opacity-90 transition-opacity hover:opacity-100">
-              <iframe
-                src="https://maps.google.com/maps?q=Prerana+Gyan+Batika+Montessori+School,+Kathmandu&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                width="100%"
-                height="160"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="School Location Map"
-                className="w-full"
-              ></iframe>
-            </div>
           </div>
         </div>
       </Container>
 
       <div className="border-t border-white/10">
-        <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row text-center sm:text-left">
+        <Container className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
           <p className="text-sm text-white/50">
             © {currentYear} {SCHOOL.name}. All rights reserved.
           </p>
-          <div className="flex flex-col items-center sm:items-end gap-1">
-            <p className="text-sm text-white/50">
-              Designed and developed by <a href="https://baralbipin.com.np" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Bipin Creates</a>
-            </p>
-          </div>
+          <p className="text-sm text-white/50">
+            Co-ed · Day Scholars · {SCHOOL.students} Students
+          </p>
         </Container>
       </div>
     </footer>
