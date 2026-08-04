@@ -108,6 +108,19 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+            <div className="mt-6 overflow-hidden rounded-xl border border-white/10 opacity-90 transition-opacity hover:opacity-100">
+              <iframe
+                src="https://maps.google.com/maps?q=Prerana+Gyan+Batika+Montessori+School,+Kathmandu&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="160"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="School Location Map"
+                className="w-full"
+              ></iframe>
+            </div>
           </div>
         </div>
       </Container>
