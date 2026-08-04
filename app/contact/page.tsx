@@ -88,18 +88,19 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <a href={SCHOOL.mapLink} target="_blank" rel="noopener noreferrer" className="block mt-8">
-                <Card className="overflow-hidden transition-transform hover:scale-[1.02]">
-                  <div className="aspect-video bg-primary/10 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <MapPin className="mx-auto mb-2 h-8 w-8 text-primary" />
-                      <p className="font-semibold text-dark-green">Kalanki-14, Khadka Gaun</p>
-                      <p className="text-sm text-text/60">Kathmandu, Nepal</p>
-                      <p className="mt-3 text-sm font-medium text-primary hover:underline">View on Google Maps</p>
-                    </div>
-                  </div>
-                </Card>
-              </a>
+              <div className="mt-8 overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
+                <iframe
+                  src="https://maps.google.com/maps?q=Prerana+Gyan+Batika+Montessori+School,+Kathmandu&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="School Location Map"
+                  className="w-full"
+                ></iframe>
+              </div>
             </div>
 
             <Card className="p-8 lg:col-span-3">
