@@ -120,7 +120,15 @@ export default function Footer() {
             © {currentYear} {SCHOOL.name}. All rights reserved.
           </p>
           <p className="text-sm text-white/50">
-            Co-ed · Day Scholars · {SCHOOL.students} Students
+            Designed and developed by{" "}
+            <Link
+              href="https://baralbipin.com.np"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-yellow-400 transition-colors duration-300"
+            >
+              Bipin Creates
+            </Link>
           </p>
         </Container>
       </div>
