@@ -3,7 +3,7 @@ export const SCHOOL = {
   shortName: "Prerana Gyan Batika",
   established: "2071 B.S.",
   type: "Private Montessori School",
-  location: "Kalanki-14, Khadka Gaun, Kathmandu, Nepal",
+  location: "Khadka Gaun, Kalanki-14, Kathmandu, Nepal",
   city: "Kathmandu, Nepal",
   programs: ["ECD", "Nursery", "LKG", "UKG", "Grade 1", "Grade 2", "Grade 3"],
   boarding: "Day Scholars",
@@ -11,6 +11,9 @@ export const SCHOOL = {
   students: "150+",
   phone: "01-5218530",
   email: "preranaschool72514@gmail.com",
+  facebook: "https://www.facebook.com/profile.php?id=61565824730923",
+  mapLink: "https://www.google.com/maps?rlz=1C1KNTJ_enNP1070NP1070&gs_lcrp=EgZjaHJvbWUqCAgAEEUYJxg7MggIABBFGCcYOzIKCAEQLhixAxiABDIGCAIQRRg8MgYIAxBFGDwyBggEEEUYPDIGCAUQRRg9MgYIBhBFGEEyBggHEEUYPdIBCDEwMTJqMGo0qAIAsAIB&um=1&ie=UTF-8&fb=1&gl=np&sa=X&geocode=KaveA_7wI-s5MdOvFXSnXWiM&daddr=Kathmandu-14,+Kathmandu+44600",
+  admissionFormLink: "/apply",
   mission:
     "To nurture every child's intellectual, emotional, social, and creative potential through quality Montessori education.",
   vision:

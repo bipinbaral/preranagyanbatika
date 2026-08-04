@@ -146,9 +146,13 @@ export default function AdmissionsPage() {
                 </p>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Button href="/contact">Contact Us</Button>
-                <Button href={`tel:${SCHOOL.phone}`} variant="outline">
-                  Call Now
+                <Button 
+                  href={SCHOOL.admissionFormLink}
+                >
+                  Apply Online
+                </Button>
+                <Button href="/contact" variant="outline">
+                  Contact Us
                 </Button>
               </div>
             </Card>

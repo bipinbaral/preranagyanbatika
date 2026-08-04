@@ -59,11 +59,11 @@ export default function Navbar() {
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/logo/logo.png"
+              src="/images/logo/logopng.png"
               alt={SCHOOL.name}
               width={52}
               height={52}
-              className="h-12 w-12 rounded-full object-cover"
+              className="h-12 w-12 object-contain"
               priority
             />
             <div className="hidden sm:block">
@@ -87,8 +87,11 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="hidden lg:block">
-            <Button href="/admissions" size="sm">
+          <div className="hidden items-center gap-4 md:flex">
+            <Button 
+              href={SCHOOL.admissionFormLink} 
+              size="sm"
+            >
               Apply Now
             </Button>
           </div>

@@ -16,7 +16,7 @@ const stats = [
     icon: Library,
     value: "7",
     label: "Academic Programs",
-    color: "bg-gold/20 text-gold",
+    color: "bg-white/10 text-white",
   },
   {
     icon: Star,
@@ -28,7 +28,7 @@ const stats = [
     icon: Puzzle,
     value: "100%",
     label: "Montessori Focused",
-    color: "bg-gold/20 text-gold",
+    color: "bg-white/10 text-white",
   },
 ];
 

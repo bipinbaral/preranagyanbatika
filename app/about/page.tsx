@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80"
+                src="/images/gallery/about us.jpg"
                 alt="About Prerana Gyan Batika Montessori School"
                 fill
                 className="object-cover"

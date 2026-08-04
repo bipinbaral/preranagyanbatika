@@ -19,7 +19,7 @@ export default function Footer() {
           <div>
             <div className="mb-4 flex items-center gap-3">
               <Image
-                src="/images/logo/logo.png"
+                src="/images/logo/footerlogo.png"
                 alt={SCHOOL.name}
                 width={56}
                 height={56}
@@ -118,9 +118,6 @@ export default function Footer() {
             © {currentYear} {SCHOOL.name}. All rights reserved.
           </p>
           <div className="flex flex-col items-center sm:items-end gap-1">
-            <p className="text-sm text-white/50">
-              Co-ed · Day Scholars · {SCHOOL.students} Students
-            </p>
             <p className="text-sm text-white/50">
               Designed and developed by <a href="https://baralbipin.com.np" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">Bipin Creates</a>
             </p>

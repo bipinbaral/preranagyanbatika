@@ -20,6 +20,10 @@ export function createMetadata({
   return {
     title: fullTitle,
     description,
+    icons: {
+      icon: "/images/logo/logo.png",
+      apple: "/images/logo/logo.png",
+    },
     keywords: [
       "Montessori school Kathmandu",
       "Prerana Gyan Batika",

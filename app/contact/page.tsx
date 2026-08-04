@@ -88,15 +88,18 @@ export default function ContactPage() {
                 ))}
               </div>
 
-              <Card className="mt-8 overflow-hidden">
-                <div className="aspect-video bg-primary/10 flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <MapPin className="mx-auto mb-2 h-8 w-8 text-primary" />
-                    <p className="font-semibold text-dark-green">Kalanki-14, Khadka Gaun</p>
-                    <p className="text-sm text-text/60">Kathmandu, Nepal</p>
+              <a href={SCHOOL.mapLink} target="_blank" rel="noopener noreferrer" className="block mt-8">
+                <Card className="overflow-hidden transition-transform hover:scale-[1.02]">
+                  <div className="aspect-video bg-primary/10 flex items-center justify-center">
+                    <div className="text-center p-6">
+                      <MapPin className="mx-auto mb-2 h-8 w-8 text-primary" />
+                      <p className="font-semibold text-dark-green">Kalanki-14, Khadka Gaun</p>
+                      <p className="text-sm text-text/60">Kathmandu, Nepal</p>
+                      <p className="mt-3 text-sm font-medium text-primary hover:underline">View on Google Maps</p>
+                    </div>
                   </div>
-                </div>
-              </Card>
+                </Card>
+              </a>
             </div>
 
             <Card className="p-8 lg:col-span-3">

@@ -16,7 +16,7 @@ export default function Hero() {
           src="/images/hero/background.png"
           alt="Children learning at Montessori school"
           fill
-          className="object-cover"
+          className="object-cover object-[75%_center] md:object-center"
           priority
           sizes="100vw"
         />

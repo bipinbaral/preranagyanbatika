@@ -29,8 +29,12 @@ export default function CTA() {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Button href="/admissions" variant="secondary" size="lg">
-                Apply for Admission
+              <Button 
+                href={SCHOOL.admissionFormLink} 
+                variant="secondary" 
+                size="lg"
+              >
+                Apply Now
                 <ArrowRight className="h-5 w-5" />
               </Button>
               <Button

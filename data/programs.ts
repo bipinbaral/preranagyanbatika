@@ -21,7 +21,7 @@ export const programs: Program[] = [
       "Child-safe Montessori materials",
     ],
     image:
-      "/images/facilities/montessoriclassroom.jpg",
+      "/images/programs/earlychildhood.jpg",
   },
   {
     id: "nursery",

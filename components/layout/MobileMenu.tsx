@@ -58,8 +58,12 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
                 </motion.li>
               ))}
             </ul>
-            <div className="border-t border-black/5 p-4">
-              <Button href="/admissions" className="w-full" onClick={onClose}>
+            <div className="mt-8 border-t border-black/10 pt-8">
+              <Button 
+                href={SCHOOL.admissionFormLink} 
+                className="w-full" 
+                onClick={onClose}
+              >
                 Apply Now
               </Button>
             </div>
